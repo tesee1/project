@@ -1,0 +1,106 @@
+.agency {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.agency__top {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #526cf1;
+}
+.agency__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: #526cf1;
+}
+.agency__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.agency__form button[type=submit] {
+  align-self: flex-start;
+}
+.agency__form input:not([type=checkbox]) {
+  width: 270px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #526cf1;
+  background: rgba(82, 108, 241, 0.1);
+  border: none;
+  font-family: "Onest";
+}
+.agency__form .input-label {
+  display: grid;
+  grid-template-columns: 180px 270px;
+  position: relative;
+}
+.agency__form .input-label.phone {
+  grid-template-columns: 180px 270px 100px;
+  max-width: 550px;
+}
+.agency__form .input-label.phone button.change {
+  position: absolute;
+  right: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #A0AFF7;
+  background: none;
+}
+.agency__form .input-label.phone button:not(.change) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #526cf1;
+  background: none;
+}
+.agency__form label:not(.input-label) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.agency-bottom {
+  color: #526cf1;
+}
+.agency-bottom__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #526cf1;
+}
+.agency-bottom__form button[type=submit] {
+  align-self: flex-start;
+}
+.agency-bottom__form input:not([type=checkbox]) {
+  width: 270px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #526cf1;
+  border-radius: 8px;
+  border: none;
+  background: rgba(82, 108, 241, 0.1);
+  padding-left: 5px;
+}
+.agency-bottom__form .input-label {
+  display: grid;
+  grid-template-columns: 180px 270px;
+  max-width: 450px;
+  position: relative;
+  align-items: center;
+}
+.agency-bottom__form .input-label span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=agency.css.map */

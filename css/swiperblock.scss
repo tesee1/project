@@ -1,0 +1,41 @@
+.swiperblock {
+    padding: 50px 0;
+  // .swiperblock__container
+
+  &__container {
+  }
+
+  // .swiperblock__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .swiperblock__item
+
+  &__item {
+    flex: 0 1 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 41px;
+
+      color: #121212;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      /* or 21px */
+
+      color: rgba(16, 16, 16, 0.5);
+    }
+  }
+}
+.container {
+}

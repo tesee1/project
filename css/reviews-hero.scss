@@ -1,0 +1,57 @@
+@use "sass:math";
+@import "mixins.scss";
+
+.reviews-hero {
+  padding: 50px 0;
+
+  // .reviews-hero__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr percent(880, 1360);
+      align-items: center;
+    }
+  }
+
+  // .reviews-hero__left
+
+  &__left {
+  }
+
+  // .reviews-hero__title
+
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 48, 32);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #526cf1;
+  }
+
+  // .reviews-hero__sub
+
+  &__sub {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  // .reviews-hero__right
+
+  &__right {
+
+    &--booking {
+    }
+  }
+}
+.container {
+}
+.btn {
+}

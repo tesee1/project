@@ -1,0 +1,88 @@
+.price {
+  padding: 50px 0;
+}
+.price__container {
+  display: flex;
+  flex-direction: column;
+}
+.price__title {
+  margin-bottom: 30px;
+}
+.price__subtitle {
+  margin-bottom: 50px;
+  max-width: 520px;
+  align-self: center;
+}
+.price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.price__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 790px;
+}
+.price__item p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+}
+.price__item span {
+  border-radius: 16px;
+  background-color: var(--color-blue);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: var(--color-light);
+  transition: all 0.3s ease 0s;
+}
+@supports (padding-top: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem )) {
+  .price__item span {
+    padding-top: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem );
+  }
+}
+@supports not (padding-top: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem )) {
+  .price__item span {
+    padding-top: calc(0.625rem + 0.875 * (100vw - 20rem) / 65);
+  }
+}
+@supports (padding-bottom: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem )) {
+  .price__item span {
+    padding-bottom: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem );
+  }
+}
+@supports not (padding-bottom: clamp( 0.625rem , 0.3557692308rem  +  1.3461538462vw , 1.5rem )) {
+  .price__item span {
+    padding-bottom: calc(0.625rem + 0.875 * (100vw - 20rem) / 65);
+  }
+}
+@supports (padding-left: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem )) {
+  .price__item span {
+    padding-left: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem );
+  }
+}
+@supports not (padding-left: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem )) {
+  .price__item span {
+    padding-left: calc(1.875rem + 2.5 * (100vw - 20rem) / 65);
+  }
+}
+@supports (padding-right: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem )) {
+  .price__item span {
+    padding-right: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem );
+  }
+}
+@supports not (padding-right: clamp( 1.875rem , 1.1057692308rem  +  3.8461538462vw , 4.375rem )) {
+  .price__item span {
+    padding-right: calc(1.875rem + 2.5 * (100vw - 20rem) / 65);
+  }
+}
+@media (any-hover: hover) {
+  .price__item span:hover {
+    transform: scale(1.05);
+  }
+}/*# sourceMappingURL=price.css.map */

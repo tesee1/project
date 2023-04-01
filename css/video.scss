@@ -1,0 +1,38 @@
+@use "sass:math";
+@import "mixins.scss";
+.video {
+    padding: 50px 0;
+
+		// .video__container
+
+		&__container {}
+
+		// .video__title
+
+		&__title {
+            margin-bottom: 30px;
+        }
+
+		// .video__subtitle
+
+		&__subtitle {
+            @include adaptiveValue("margin-bottom", 125, 50);
+        }
+
+		// .video__block
+
+		&__block {}
+
+		// .video__player
+
+		&__player {
+            max-width: 100%;
+            height: auto;
+        }
+}
+.container {
+}
+.title {
+}
+.subtitle {
+}

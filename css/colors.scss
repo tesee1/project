@@ -1,0 +1,121 @@
+.colors {
+  // .colors__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    /* identical to box height, or 26px */
+
+    color: #526cf1;
+    margin-bottom: 30px;
+  }
+
+  // .colors__form
+
+  &__form {
+  }
+}
+.colors-main {
+  // .colors-main__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    color: #526cf1;
+    margin-bottom: 30px;
+  }
+}
+.form-colors {
+  // .form-colors__top
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    color: var(--color-blue);
+  }
+
+  // .form-colors__top-middle
+
+  &__top-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    color: var(--color-blue);
+  }
+
+  // .form-colors__middle
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    color: var(--color-blue);
+  }
+
+  // .form-colors__middle-bottom
+
+  &__middle-bottom {
+    margin-bottom: 30px;
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      color: #526cf1;
+      margin-bottom: 17px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-blue);
+
+      li {
+        padding: 10px 15px;
+      }
+
+      li:nth-child(2) {
+        background: rgba(241, 82, 82, 0.2);
+      }
+
+      li:nth-child(3) {
+        background: rgba(162, 162, 162, 0.2);
+      }
+
+      li:nth-child(4) {
+        background: rgba(82, 108, 241, 0.25);
+      }
+    }
+  }
+
+  // .form-colors__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: var(--color-blue);
+
+    select {
+      padding: 10px 15px;
+      background: #eef1fe;
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Onest';
+    }
+  }
+}
+.btn {
+}
+.blue {
+}

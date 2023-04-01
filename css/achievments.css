@@ -1,0 +1,24 @@
+.achievments {
+  padding: 50px 0;
+}
+.achievments__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+.achievments__item {
+  display: grid;
+  gap: 10px;
+}
+.achievments__item h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 130%;
+  color: var(--color-blue);
+}
+.achievments__item p {
+  color: rgba(16, 16, 16, 0.5);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+}/*# sourceMappingURL=achievments.css.map */

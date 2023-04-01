@@ -1,0 +1,149 @@
+@use "sass:math";
+@import "mixins.scss";
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestRegular.woff") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestMedium.woff") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestBold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestBlack.woff") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestExtraBold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+body,
+html {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+html.lock {
+  overflow: hidden;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-blue: #526cf1;
+  --light-blue: #cbd3fb;
+  --heading--color: #121212;
+  --text-color: rgba(16, 16, 16, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 15px 45px;
+  transition: all 0.3s ease 0s;
+  border-radius: 8px;
+  text-transform: uppercase;
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.btn.light {
+  background-color: #fff;
+  color: var(--color-blue);
+}
+
+.btn.blue {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+}
+
+.title {
+  font-weight: 500;
+  @include adaptiveValue("font-size", 48, 36);
+  line-height: math.div(61, 48);
+  color: #121212;
+  text-align: center;
+
+  span {
+    color: var(--color-blue);
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  @include adaptiveValue("font-size", 24, 16);
+  line-height: math.div(31, 24);
+  text-align: center;
+  color: #121212;
+}
